@@ -1,15 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- TODO: Add title -->
-  <title>Document title</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+  <title>Backendless Gallery</title>
   <link rel="stylesheet" href="./style.scss">
   <script src="./main.js"></script>
 </head>
+
 <body>
-  Template
+  <div class="page">
+    <header class="page__header header">
+      <p class="header__title">Backendless</p>
+      <form class="header__form form">
+        <div id="radioButtonTheme" class="form__radio">
+          <input
+            type="radio"
+            id="lightTheme"
+            name="radioButtonTheme"
+            value="lightTheme"
+            checked
+          >
+          <label for="lightTheme">Light Theme</label>
+
+          <input
+            type="radio"
+            id="darkTheme"
+            name="radioButtonTheme"
+            value="darkTheme"
+          >
+          <label for="darkTheme">Dark Theme</label>
+
+          <input
+            type="radio"
+            id="grayTheme"
+            name="radioButtonTheme"
+            value="grayTheme"
+          >
+          <label for="grayTheme">Gray Theme</label>
+        </div>
+
+        <div id="buttonThemes" class="form__buttons">
+          <button type="button">Light Theme</button>
+          <button type="button">Dark Theme</button>
+          <button type="button">Gray Theme</button>
+        </div>
+
+        <div id="selectThemes" class="form__select">
+          <select name="selectTheme">
+            <option value="lightTheme" selected>Light Theme</option>
+            <option value="darkTheme">Dark Theme</option>
+            <option value="grayTheme">Gray Theme</option>
+          </select>
+        </div>
+      </form>
+    </header>
+
+    <main class="page__main main">
+      <section class="main__gallery gallery">
+        <h1 class="gallery__title">Backendless Gallery</h1>
+        <div class="gallery__photos">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 1"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 2"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 3"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 4"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--5">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 5"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--6">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 6"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--7">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 7"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--8">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 8"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--9">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 9"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--10">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 10"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 11"
+            >
+          </figure>
+          <figure class="gallery__item gallery__item--12">
+            <img
+              src="http://placehold.it/1000x600"
+              class="gallery__img"
+              alt="Image 12"
+            >
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <ul class="footer__contacts contacts">
+        <li class="contacts__item">
+          <a
+            href="https://backendless.com/"
+            class="contacts__link"
+            target="_blank"
+          >
+            Backendless.com
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a href="tel:+555-555-555" class="contacts__link">
+            555-555-555
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a
+            href="https://www.instagram.com/backendless/"
+            class="social__link"
+            target="_blank"
+          >
+            Instagram
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://www.facebook.com/backendless" class="social__link"
+            target="_blank"
+          >
+            Facebook
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://twitter.com/Backendless"
+            class="social__link"
+            target="_blank"
+          >
+            Twitter
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://telegram.im/@backendless"
+            class="social__link"
+            target="_blank"
+          >
+            Telegram
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://www.youtube.com/backendless"
+            class="social__link"
+            target="_blank"
+          >
+            Youtube
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="#"
+            class="social__link"
+            target="_blank"
+          >
+            VK
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="mailto:someone@backendless.com"
+            class="social__link"
+          >
+            Email
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
 </body>
+
 </html>
