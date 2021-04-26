@@ -1,7 +1,7 @@
 {
-  "name": "vanilla-template",
+  "name": "backendless_gallery",
   "version": "1.0.0",
-  "description": "Tamplate for vanilla (no framework) frontend projects",
+  "description": "landing page of backendless gallery",
   "main": "./src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oaleksandrovva/vanilla-template.git"
+    "url": "git+https://github.com/oaleksandrovva/backendless_gallery.git"
   },
   "keywords": [
     "template",
@@ -31,9 +31,9 @@
   "author": "oaleksandrovva",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/oaleksandrovva/vanilla-template/issues"
+    "url": "https://github.com/oaleksandrovva/backendless_gallery/issues"
   },
-  "homepage": "https://github.com/oaleksandrovva/vanilla-template#readme",
+  "homepage": "https://github.com/oaleksandrovva/backendless_gallery#readme",
   "devDependencies": {
     "concurrently": "^6.0.2",
     "eslint": "^7.24.0",
