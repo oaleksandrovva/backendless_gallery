@@ -1,0 +1,22 @@
+.social {
+  &__link {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: $socia-icon-size;
+    height: $socia-icon-size;
+    background-color: rgb(255, 0, 0);
+
+    // &--instargam {
+    //   background: url('../images/viber.png') no-repeat;
+    // }
+
+    // &--whatsapp {
+    //   background: url('../images/whatsapp.png') no-repeat;
+    // }
+
+    // &--telegram {
+    //   background: url('../images/telegram.png') no-repeat;
+    // }
+  }
+}
