@@ -7,9 +7,9 @@
     height: $icon-size;
     background-size: cover;
     background-repeat: no-repeat;
+    filter: var($icon-color);
 
-
-    &--instargam {
+    &--instagram {
       background-image: url('../images/icons/instagram.png');
     }
 
@@ -35,13 +35,6 @@
 
     &--email {
       background-image: url('../images/icons/email.png');
-    }
-  }
-
-  @media screen and (max-width: $desktop-size) {
-    &__link {
-      width: $small-icon-size;
-      height: $small-icon-size;
     }
   }
 }

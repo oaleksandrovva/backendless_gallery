@@ -1,6 +1,6 @@
 .contacts {
   &__link {
-    color: #000;
+    color: var($font-color);
     text-decoration: underline;
   }
 }

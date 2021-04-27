@@ -1,0 +1,27 @@
+@import './utils/vars';
+
+[data-theme='light'] {
+  #{$font-color}: $light-font-color;
+  #{$background-color}: $light-background-color;
+  #{$section-color}: $light-section-color;
+  #{$border-color}: $light-border-color;
+  #{$icon-color}: $icon-black;
+}
+
+[data-theme='dark'] {
+  #{$font-color}: $dark-font-color;
+  #{$background-color}: $dark-background-color;
+  #{$section-color}: $dark-section-color;
+  #{$border-color}: $dark-border-color;
+  #{$icon-color}: $icon-white;
+}
+
+[data-theme='gray'] {
+  #{$font-color}: $gray-font-color;
+  #{$background-color}: $gray-background-color;
+  #{$section-color}: $gray-section-color;
+  #{$border-color}: $gray-border-color;
+  #{$icon-color}: $icon-white;
+}
+
+

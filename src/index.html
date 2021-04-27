@@ -7,53 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
   <title>Backendless Gallery</title>
-  <link rel="stylesheet" type="text/css" href="./styles/all.scss">
-  <!-- <link rel="stylesheet" type="text/css" href="./styles/light.scss" id="lightThemeLink">
-  <link rel="stylesheet" type="text/css" href="./styles/dark.scss" id="darkThemeLink">
-  <link rel="stylesheet" type="text/css" href="./styles/gray.scss" id="grayThemeLink"> -->
-  <script src="./main.js"></script>
+  <link rel="stylesheet" type="text/css" href="/styles/all.scss">
 </head>
 
-<body>
+<body data-theme>
   <div class="page">
     <header class="page__header header">
       <p class="header__title">Backendless</p>
-      <form class="header__form form">
-        <div id="radioButtonTheme" class="form__radio">
+      <form class="header__form form" action="#" method="get">
+        <div class="form__radio">
           <input
             type="radio"
             id="lightTheme"
             name="radioButtonTheme"
             value="lightTheme"
+            class="lightTheme"
+            checked="true"
           >
-          <label for="lightTheme">Light Theme</label>
+          <label for="lightTheme" class="lightTheme">Light Theme</label>
 
           <input
             type="radio"
             id="darkTheme"
             name="radioButtonTheme"
             value="darkTheme"
-            checked
+            class="darkTheme"
           >
-          <label for="darkTheme">Dark Theme</label>
+          <label for="darkTheme" class="darkTheme">Dark Theme</label>
 
           <input
             type="radio"
             id="grayTheme"
             name="radioButtonTheme"
             value="grayTheme"
+            class="grayTheme"
           >
-          <label for="grayTheme">Gray Theme</label>
+          <label for="grayTheme" class="grayTheme">Gray Theme</label>
         </div>
 
-        <div id="buttonThemes" class="form__buttons">
-          <button type="button">Light Theme</button>
-          <button type="button">Dark Theme</button>
-          <button type="button">Gray Theme</button>
+        <div class="form__buttons">
+          <button type="button" class="lightTheme">Light Theme</button>
+          <button type="button" class="darkTheme">Dark Theme</button>
+          <button type="button" class="grayTheme">Gray Theme</button>
         </div>
 
-        <div id="selectThemes" class="form__select">
-          <select name="selectTheme">
+        <div class="form__select">
+          <select name="selectTheme" class="select">
             <option value="lightTheme" selected>Light Theme</option>
             <option value="darkTheme">Dark Theme</option>
             <option value="grayTheme">Gray Theme</option>
@@ -68,84 +67,84 @@
         <div class="gallery__photos">
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=1"
+              src="https://picsum.photos/1000/600?random=1"
               class="gallery__img"
               alt="Image 1"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=2"
+              src="https://picsum.photos/1000/600?random=2"
               class="gallery__img"
               alt="Image 2"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=3"
+              src="https://picsum.photos/1000/600?random=3"
               class="gallery__img"
               alt="Image 3"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=4"
+              src="https://picsum.photos/1000/600?random=4"
               class="gallery__img"
               alt="Image 4"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=5"
+              src="https://picsum.photos/1000/600?random=5"
               class="gallery__img"
               alt="Image 5"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=6"
+              src="https://picsum.photos/1000/600?random=6"
               class="gallery__img"
               alt="Image 6"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=7"
+              src="https://picsum.photos/1000/600?random=7"
               class="gallery__img"
               alt="Image 7"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=8"
+              src="https://picsum.photos/1000/600?random=8"
               class="gallery__img"
               alt="Image 8"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=9"
+              src="https://picsum.photos/1000/600?random=9"
               class="gallery__img"
               alt="Image 9"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=10"
+              src="https://picsum.photos/1000/600?random=10"
               class="gallery__img"
               alt="Image 10"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=11"
+              src="https://picsum.photos/1000/600?random=11"
               class="gallery__img"
               alt="Image 11"
             >
           </figure>
           <figure class="gallery__item">
             <img
-              src="https://loremflickr.com/1000/600/ocean?random=12"
+              src="https://picsum.photos/1000/600?random=12"
               class="gallery__img"
               alt="Image 12"
             >
@@ -238,6 +237,8 @@
       </ul>
     </footer>
   </div>
+
+  <script src="./main.js"></script>
 </body>
 
 </html>
