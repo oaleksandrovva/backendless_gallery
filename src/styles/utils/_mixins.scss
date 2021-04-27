@@ -1,0 +1,13 @@
+@mixin section-positioning {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+}
+
+@mixin hidden-element {
+  display: none;
+}
+

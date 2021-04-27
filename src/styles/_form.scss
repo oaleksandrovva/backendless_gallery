@@ -1,0 +1,22 @@
+.form {
+  @media screen and (max-width: $tablet-size) {
+    &__radio,
+    &__buttons {
+      @include hidden-element;
+    }
+  }
+
+  @media screen and (max-width: $desktop-size) and (min-width: $tablet-size) {
+    &__radio,
+    &__select {
+      @include hidden-element;
+    }
+  }
+
+  @media screen and (min-width: $desktop-size) {
+    &__buttons,
+    &__select {
+      @include hidden-element;
+    }
+  }
+}

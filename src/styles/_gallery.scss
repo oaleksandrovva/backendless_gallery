@@ -11,8 +11,8 @@
   }
 
   &__img {
-    width: 100%;
-    height: 100%;
+    width: $image-size;
+    height: $image-size;
     object-fit: cover;
   }
 

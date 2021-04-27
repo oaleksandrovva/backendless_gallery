@@ -1,17 +1,20 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 15px;
+  @include section-positioning;
+  bottom: 0;
 
   &__list {
     display: flex;
     gap: 15px;
   }
+}
 
-  @media screen and (max-width: $tablet-size) {
+@media screen and (max-width: $tablet-size) {
+  .footer {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
+
+    &__list {
+      gap: 10px;
+    }
   }
 }

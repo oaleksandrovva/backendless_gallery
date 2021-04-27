@@ -3,20 +3,45 @@
     font-size: 0;
     display: inline-block;
     vertical-align: middle;
-    width: $socia-icon-size;
-    height: $socia-icon-size;
-    background-color: rgb(255, 0, 0);
+    width: $icon-size;
+    height: $icon-size;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    // &--instargam {
-    //   background: url('../images/viber.png') no-repeat;
-    // }
 
-    // &--whatsapp {
-    //   background: url('../images/whatsapp.png') no-repeat;
-    // }
+    &--instargam {
+      background-image: url('../images/icons/instagram.png');
+    }
 
-    // &--telegram {
-    //   background: url('../images/telegram.png') no-repeat;
-    // }
+    &--facebook {
+      background-image: url('../images/icons/facebook.png');
+    }
+
+    &--twitter {
+      background-image: url('../images/icons/twitter.png');
+    }
+
+    &--telegram {
+      background-image: url('../images/icons/telegram.png');
+    }
+
+    &--youtube {
+      background-image: url('../images/icons/youtube.png');
+    }
+
+    &--vk {
+      background-image: url('../images/icons/vk.png');
+    }
+
+    &--email {
+      background-image: url('../images/icons/email.png');
+    }
+  }
+
+  @media screen and (max-width: $desktop-size) {
+    &__link {
+      width: $small-icon-size;
+      height: $small-icon-size;
+    }
   }
 }

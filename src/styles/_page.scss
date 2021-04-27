@@ -1,5 +1,11 @@
 .page {
   &__main {
-    margin: 15px;
+    margin: 60px 15px;
+  }
+
+  @media screen and (max-width: $tablet-size) {
+    &__main {
+      margin-bottom: 85px;
+    }
   }
 }
