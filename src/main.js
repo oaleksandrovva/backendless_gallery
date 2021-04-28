@@ -35,7 +35,7 @@ const updateColor = (changeEvent) => {
   }
 };
 
-const selectElement = document.querySelector('.select');
+const selectElement = document.querySelector('.form__select');
 const inputElements = document.querySelectorAll('input[name="theme"]');
 const buttonsElement = document.querySelectorAll('.form__button');
 
