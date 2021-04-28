@@ -9,10 +9,10 @@
 - [Code](https://github.com/oaleksandrovva/backendless_gallery)
 
 ## Technologies
-JavaScript
-BEM methodology
-SCSS preprocessor
-HTML5/CSS3
+- JavaScript
+- BEM methodology
+- SCSS preprocessor
+- HTML5/CSS3
 
 ### How to run project locally
 - Fork and clone this repository
