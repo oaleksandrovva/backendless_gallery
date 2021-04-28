@@ -16,46 +16,69 @@
       <p class="header__title">Backendless</p>
       <form class="header__form form" action="#" method="get">
         <div class="form__radio">
-          <input
-            type="radio"
-            id="lightTheme"
-            name="radioButtonTheme"
-            value="lightTheme"
-            class="lightTheme"
-            checked="true"
-          >
-          <label for="lightTheme" class="lightTheme">Light Theme</label>
+          <label for="lightTheme">
+            <input
+              type="radio"
+              id="lightTheme"
+              name="theme"
+              value="lightTheme"
+            >
+            Light Theme
+          </label>
 
-          <input
-            type="radio"
-            id="darkTheme"
-            name="radioButtonTheme"
-            value="darkTheme"
-            class="darkTheme"
-          >
-          <label for="darkTheme" class="darkTheme">Dark Theme</label>
+          <label for="darkTheme">
+            <input
+              type="radio"
+              id="darkTheme"
+              name="theme"
+              value="darkTheme"
+            >
+            Dark Theme
+          </label>
 
-          <input
-            type="radio"
-            id="grayTheme"
-            name="radioButtonTheme"
-            value="grayTheme"
-            class="grayTheme"
-          >
-          <label for="grayTheme" class="grayTheme">Gray Theme</label>
+          <label for="grayTheme">
+            <input
+              type="radio"
+              id="grayTheme"
+              name="theme"
+              value="grayTheme"
+            >
+            Gray Theme
+          </label>
         </div>
 
         <div class="form__buttons">
-          <button type="button" class="lightTheme">Light Theme</button>
-          <button type="button" class="darkTheme">Dark Theme</button>
-          <button type="button" class="grayTheme">Gray Theme</button>
+          <button
+            type="button"
+            value="lightTheme"
+            class="buttonTheme"
+            name="theme"
+          >
+            Light Theme
+          </button>
+          <button
+            type="button"
+            value="darkTheme"
+            class="buttonTheme"
+            name="theme"
+          >
+            Dark Theme
+          </button>
+          <button
+            type="button"
+            value="grayTheme"
+            class="buttonTheme"
+            name="theme"
+          >
+            Gray Theme
+          </button>
         </div>
 
         <div class="form__select">
           <select name="selectTheme" class="select">
-            <option value="lightTheme" selected>Light Theme</option>
-            <option value="darkTheme">Dark Theme</option>
-            <option value="grayTheme">Gray Theme</option>
+            <option value="lightTheme" name="theme">Light Theme</option>
+            <option value="darkTheme" name="theme">Dark Theme</option>
+            <option value="grayTheme" name="theme">Gray Theme</option>
           </select>
         </div>
       </form>

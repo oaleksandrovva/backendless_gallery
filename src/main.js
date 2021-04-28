@@ -1,26 +1,20 @@
-const theme = localStorage.getItem('data-theme');
-const form = document.querySelector('.form');
+const theme = localStorage.getItem('data-theme') || 'light';
+
 const changeTheme = (color) => {
+  const selectedOption = document.querySelector(`option[name="theme"][value="${color}Theme"]`);
+  const checkedInput = document.querySelector(`input[name="theme"][value="${color}Theme"]`);
+
+  checkedInput.setAttribute('checked', 'checked');
+  selectedOption.setAttribute('selected', 'selected');
+
   document.documentElement.setAttribute('data-theme', color);
   localStorage.setItem('data-theme', color);
 };
 
-changeTheme(theme);
+const updateColor = (changeEvent) => {
+  const colorOfTheme = changeEvent.target.value;
 
-form.addEventListener('click', (clickEvent) => {
-  clickEvent.preventDefault();
-
-  const selectedColor = clickEvent.target.value;
-  const selectedClassName = clickEvent.target.className;
-  const selectedInputId = clickEvent.target.htmlFor;
-  const selectInput = clickEvent.target.closest('.form__radio');
-  const selectedInput = document.getElementById(selectedInputId);
-
-  if (selectInput && selectedInputId) {
-    selectedInput.checked = true;
-  }
-
-  switch (selectedColor || selectedClassName) {
+  switch (colorOfTheme) {
     case 'lightTheme':
       changeTheme('light');
       break;
@@ -36,4 +30,18 @@ form.addEventListener('click', (clickEvent) => {
     default:
       break;
   }
+};
+
+const selectElement = document.querySelector('.select');
+const inputElements = document.querySelectorAll('input[name="theme"]');
+const buttonsElement = document.querySelectorAll('.buttonTheme');
+
+selectElement.addEventListener('change', updateColor);
+inputElements.forEach((element) => {
+  element.addEventListener('change', updateColor);
 });
+buttonsElement.forEach((element) => {
+  element.addEventListener('click', updateColor);
+});
+
+changeTheme(theme);
