@@ -8,6 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     filter: var($icon-color);
+    transition: transform 0.3s linear;
 
     &--instagram {
       background-image: url('../images/icons/instagram.png');
@@ -35,6 +36,10 @@
 
     &--email {
       background-image: url('../images/icons/email.png');
+    }
+
+    &:hover {
+      transform: scale(1.3);
     }
   }
 }

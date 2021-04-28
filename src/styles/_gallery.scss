@@ -3,6 +3,7 @@
     margin: 15px;
     text-align: center;
     text-transform: uppercase;
+    animation: bounce-top 2s infinite both;
   }
 
   &__photos {
@@ -15,6 +16,13 @@
     width: $image-size;
     height: $image-size;
     object-fit: cover;
+    transition: box-shadow 0.5s linear,
+      transform 0.5s linear;
+
+    &:hover {
+      box-shadow: 0 0 15px var($font-color);
+      transform: scale(1.02);
+    }
   }
 
   @media screen and (max-width: $tablet-size) {
@@ -50,4 +58,48 @@
   }
 }
 
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-35px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
 
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    transform: translateY(-16px);
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}

@@ -37,7 +37,7 @@ const updateColor = (changeEvent) => {
 
 const selectElement = document.querySelector('.select');
 const inputElements = document.querySelectorAll('input[name="theme"]');
-const buttonsElement = document.querySelectorAll('.buttonTheme');
+const buttonsElement = document.querySelectorAll('.form__button');
 
 selectElement.addEventListener('change', updateColor);
 inputElements.forEach((element) => {

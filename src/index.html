@@ -16,7 +16,7 @@
       <p class="header__title">Backendless</p>
       <form class="header__form form" action="#" method="get">
         <div class="form__radio">
-          <label for="lightTheme">
+          <label for="lightTheme" class="form__input-name">
             <input
               type="radio"
               id="lightTheme"
@@ -26,7 +26,7 @@
             Light Theme
           </label>
 
-          <label for="darkTheme">
+          <label for="darkTheme" class="form__input-name">
             <input
               type="radio"
               id="darkTheme"
@@ -36,7 +36,7 @@
             Dark Theme
           </label>
 
-          <label for="grayTheme">
+          <label for="grayTheme" class="form__input-name">
             <input
               type="radio"
               id="grayTheme"
@@ -51,21 +51,24 @@
           <button
             type="button"
             value="lightTheme"
-            class="buttonTheme"
+            class="form__button"
+            name="theme"
           >
             Light Theme
           </button>
           <button
             type="button"
             value="darkTheme"
-            class="buttonTheme"
+            class="form__button"
+            name="theme"
           >
             Dark Theme
           </button>
           <button
             type="button"
             value="grayTheme"
-            class="buttonTheme"
+            class="form__button"
+            name="theme"
           >
             Gray Theme
           </button>
