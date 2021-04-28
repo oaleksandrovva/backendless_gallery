@@ -15,7 +15,7 @@ SCSS preprocessor
 HTML5/CSS3
 
 ### How to run project locally
-Fork and clone this repository
-`npm install`
-`npm start`
-open your browser at http://localhost:1234
+- Fork and clone this repository
+- `npm install`
+- `npm start`
+- Open your browser at http://localhost:1234
