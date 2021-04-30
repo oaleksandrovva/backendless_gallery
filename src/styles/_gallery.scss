@@ -17,6 +17,7 @@
     height: $image-size;
     object-fit: cover;
     transition: box-shadow 0.5s linear;
+    cursor: zoom-in;
 
     &:hover {
       box-shadow: 0 0 15px var($font-color);

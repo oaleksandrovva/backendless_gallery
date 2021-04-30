@@ -11,3 +11,8 @@
   display: none;
 }
 
+@mixin gallery-symbol {
+  position: absolute;
+  font-weight: 600;
+  cursor: pointer;
+}
