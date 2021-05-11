@@ -20,6 +20,14 @@
     border-top: $border-size solid var($border-color);
   }
 
+  &__popup {
+    position: fixed;
+    z-index: 1;
+    padding-top: 10vh;
+    top: 0;
+    left: 0;
+  }
+
   @media screen and (max-width: $tablet-size) {
     &__main {
       padding-bottom: 85px;

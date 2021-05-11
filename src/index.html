@@ -14,34 +14,39 @@
   <div class="page">
     <header class="page__header header">
       <p class="header__title">Backendless</p>
-      <form class="header__form form" action="#" method="get">
+      <form
+        class="header__form form"
+        action="#"
+        method="get"
+        name="header-form"
+      >
         <div class="form__radio">
-          <label for="lightTheme" class="form__input-name">
+          <label for="light-theme" class="form__input-name">
             <input
               type="radio"
-              id="lightTheme"
+              id="light-theme"
               name="theme"
-              value="lightTheme"
+              value="light-theme"
             >
             Light Theme
           </label>
 
-          <label for="darkTheme" class="form__input-name">
+          <label for="dark-theme" class="form__input-name">
             <input
               type="radio"
-              id="darkTheme"
+              id="dark-theme"
               name="theme"
-              value="darkTheme"
+              value="dark-theme"
             >
             Dark Theme
           </label>
 
-          <label for="grayTheme" class="form__input-name">
+          <label for="gray-theme" class="form__input-name">
             <input
               type="radio"
-              id="grayTheme"
+              id="gray-theme"
               name="theme"
-              value="grayTheme"
+              value="gray-theme"
             >
             Gray Theme
           </label>
@@ -50,7 +55,7 @@
         <div class="form__buttons">
           <button
             type="button"
-            value="lightTheme"
+            value="light-theme"
             class="form__button"
             name="theme"
           >
@@ -58,7 +63,7 @@
           </button>
           <button
             type="button"
-            value="darkTheme"
+            value="dark-theme"
             class="form__button"
             name="theme"
           >
@@ -66,7 +71,7 @@
           </button>
           <button
             type="button"
-            value="grayTheme"
+            value="gray-theme"
             class="form__button"
             name="theme"
           >
@@ -74,10 +79,10 @@
           </button>
         </div>
 
-        <select name="selectTheme" class="form__select">
-          <option value="lightTheme" name="theme">Light Theme</option>
-          <option value="darkTheme" name="theme">Dark Theme</option>
-          <option value="grayTheme" name="theme">Gray Theme</option>
+        <select name="select-theme" class="form__select">
+          <option value="light-theme" name="theme">Light Theme</option>
+          <option value="dark-theme" name="theme">Dark Theme</option>
+          <option value="gray-theme" name="theme">Gray Theme</option>
         </select>
       </form>
     </header>
@@ -172,10 +177,15 @@
           </figure>
         </div>
 
-        <div id="popup" class="popup">
+        <div id="popup" class="popup page__popup">
           <div class="popup__content">
             <span class="popup__close"></span>
-            <img id="image" class="popup__image" alt="" src="">
+            <img
+              id="image"
+              class="popup__image"
+              alt="Image"
+              src="#"
+            >
             <p id="caption"></p>
           </div>
         </div>

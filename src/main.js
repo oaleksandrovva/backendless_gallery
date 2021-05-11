@@ -1,8 +1,8 @@
 const theme = localStorage.getItem('data-theme') || 'light';
 
-const selectedButton = (color) => {
-  const selectedOption = document.querySelector(`option[name="theme"][value="${color}Theme"]`);
-  const checkedInput = document.querySelector(`input[name="theme"][value="${color}Theme"]`);
+const wasSelectedButton = (color) => {
+  const selectedOption = document.querySelector(`option[name="theme"][value="${color}-theme"]`);
+  const checkedInput = document.querySelector(`input[name="theme"][value="${color}-theme"]`);
 
   checkedInput.checked = true;
   selectedOption.selected = true;
@@ -11,22 +11,22 @@ const selectedButton = (color) => {
 const changeTheme = (color) => {
   document.documentElement.setAttribute('data-theme', color);
   localStorage.setItem('data-theme', color);
-  selectedButton(color);
+  wasSelectedButton(color);
 };
 
 const updateColor = (changeEvent) => {
   const colorOfTheme = changeEvent.target.value;
 
   switch (colorOfTheme) {
-    case 'lightTheme':
+    case 'light-theme':
       changeTheme('light');
       break;
 
-    case 'darkTheme':
+    case 'dark-theme':
       changeTheme('dark');
       break;
 
-    case 'grayTheme':
+    case 'gray-theme':
       changeTheme('gray');
       break;
 
